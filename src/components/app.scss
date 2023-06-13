@@ -1,0 +1,47 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, var(--color-bg), var(--color-renci));
+}
+
+.layout {
+  margin: 0;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 0;
+  overflow: hidden;
+  filter: drop-shadow(0 0 1rem #00000033);
+  background-image: linear-gradient(120deg, #bdd, #eff) !important;
+  transition: margin 250ms, padding 250ms, width 250ms;
+}
+
+@media (min-width: 800px) {
+  .layout {
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: calc(100% - 4rem);
+  }
+}
+
+.footer {
+  padding: 0 !important;
+  width: 100%;
+  max-width: 900px;
+  background-color: transparent !important;
+  color: var(--color-unc-white) !important;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  .github-icon {
+    filter: opacity(0.5);
+  }
+  .github-icon:hover {
+    filter: opacity(1.0);
+  }
+}
