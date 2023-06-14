@@ -89,7 +89,7 @@ module.exports = {
   devtool: 'source-map',
 
   devServer: {
-    contentBase: './dist',
+    static: path.resolve(__dirname, 'dist'),
     hot: true,
   }
 }
